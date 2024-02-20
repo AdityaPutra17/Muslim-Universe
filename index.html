@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muslim Universe</title>
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/flowbite.min.css">
+    <link rel="stylesheet" href="./assets/css/hamburger.css">
+    <link rel="stylesheet" href="./assets/css/aos.css">
+    <link rel="stylesheet" href="./assets/css/animate.min.css">
+    <link rel="stylesheet" href="./assets/css/build.css" />
+</head>
+
+<body class="font-sans">
+    <!-- Nav -->
+    <nav class="relative container mx-auto py-6 z-50">
+        <div class="flex items-center justify-between px-3">
+            <div class="brand">
+                <a href="#home"><img src="./assets/img/logo.png" alt="Muslim Universe"></a>
+            </div>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#home" class="text-white hover:text-lightYellow">Home</a>
+                <a href="#courses" class="text-white hover:text-lightYellow">Course</a>
+                <a href="#explore" class="text-white hover:text-lightYellow">News</a>
+                <a href="#about" class="text-white hover:text-lightYellow">About</a>
+                <a href="#faq" class="text-white hover:text-lightYellow">FAQ</a>
+            </div>
+            <div><a href="./login.html"
+                    class="hidden md:block px-12 py-3 rounded-full text-white bg-lightYellow font-bold hover:opacity-85">Login</a>
+            </div>
+            <button class="block md:hidden hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+            <div id="menu"
+                class="absolute flex-col items-center hidden self-end py-8 mt-0 space-y-6 font-bold bg-white bg-opacity-95 sm:w-auto sm:self-center left-0 right-0 drop-shadow-md">
+                <a href="#home">Home</a>
+                <a href="#courses">Course</a>
+                <a href="#news">News</a>
+                <a href="#about">About</a>
+                <a href="#faq">FAQ</a>
+                <a href="./login.html"
+                    class="px-12 py-3 rounded-full text-white bg-lightYellow font-bold hover:opacity-85">Login</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Nav -->
+
+
+    <!-- Header -->
+    <header id="home" class="min-h-screen bg-cover bg-no-repeat -mt-[109px] md:-mt-[96px] relative z-[49]"
+        style="background-image: url(./assets/img/bg-hero.png)">
+        <div
+            class="container mx-auto flex flex-col-reverse px-4 min-h-screen items-center lg:flex-row pt-36 lg:pt-16 lg:justify-between justify-end">
+            <!-- Left -->
+            <div class="w-full lg:w-1/2 space-y-7 tracking-widest">
+                <h1 class="text-3xl sm:text-5xl text-center mx-auto lg:mx-0 lg:text-left lg:text-7xl font-extrabold text-white animate__animated animate__fadeInUpBig animate__delay-1s tracking-wide"
+                    style="--animate-delay: 0.5s;">
+                    Celebrate
+                    Knowledge
+                    Embrace Faith
+                </h1>
+                <p class="text-white text-lg sm:text-xl text-center lg:text-left mx-auto lg:mx-0 lg:text-2xl lg:max-w-sm animate__animated animate__fadeInUpBig animate__delay-1s tracking-wide"
+                    style="--animate-delay: 0.7s;">
+                    Enroll Now in Muslim Universe's Enlightening Courses!"
+                </p>
+                <div class="lg:block flex justify-center animate__animated animate__fadeInUpBig animate__delay-1s"
+                    style="--animate-delay: 0.9s;">
+                    <a href="#courses"
+                        class="px-14 py-3 rounded-full text-white inline-block font-bold bg-lightYellow hover:opacity-85">Get
+                        Started</a>
+                </div>
+            </div>
+            <div class="lg:w-1/2 relative animate__animated animate__fadeInUpBig animate__delay-1s"
+                style="--animate-delay: 0.3s;">
+                <div>
+                    <img src="./assets/img/mosque.png" class="w-40 sm:w-64 lg:w-96 mx-auto  lg:ms-auto lg:me-16" alt="">
+                </div>
+                <div
+                    class="hidden lg:block absolute bottom-3 right-16 z-40 px-20 py-4 mx-auto bg-[#F2E8F3] rounded-full">
+                    <div class="absolute left-8 -top-3">
+                        <img src="./assets/img/women.png" alt="Women" class="w-16" />
+                    </div>
+                    <div class="flex flex-col space-y-2 h-full  ps-8">
+                        <p class="text-xl text-[#251F34] font-bold">Quran Class Progress</p>
+                        <p class="text-[#8B8895] font-medium">Total Module: <span class="text-purp font-extrabold">15 /
+                                20</span>
+                        </p>
+                        <div class="border-2 border-solid border-white rounded-lg">
+                            <div class="border-[3px] border-solid border-purp rounded-lg w-3/4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header -->
+
+
+    <div class="bg-lightPurp">
+
+
+        <!-- Section Jadwal Shalat -->
+        <section id="jadwal" class="relative">
+            <img src="./assets/img/prayer/vector.png"
+                class="hidden lg:block absolute top-32 right-72 overflow-hidden z-10">
+            <img src="./assets/img/bg-blur.png" class="hidden lg:block absolute top-[500px] overflow-hidden z-10">
+            <img src="./assets/img/prayer/vector.png"
+                class="hidden lg:block absolute top-32 left-72 overflow-hidden z-10">
+            <div class="container px-4 pt-28 pb-20 relative z-20">
+                <div class="flex flex-col space-y-8 z-2">
+                    <!-- Jam Analog -->
+                    <div id="clockContainer" data-aos="zoom-in" data-aos-duration="600"
+                        class="relative m-auto w-44 h-44 sm:w-60 sm:h-60 md:w-80 md:h-80 bg-no-repeat z-50"
+                        style="background-image: url('./assets/img/clock.png'); background-size: 100%;"
+                        data-aos="zoom-in">
+                        <div id="hour"
+                            class="absolute bg-black rounded-xl origin-bottom w-[1.8%] h-[23%] top-[27%] left-[48.6%] opacity-80">
+                        </div>
+                        <div id="minute"
+                            class="absolute bg-black rounded-xl origin-bottom w-[1.6%] h-[30%] top-[19%] left-[48.9%] opacity-80">
+                        </div>
+                        <div id="second"
+                            class="absolute bg-black rounded-xl origin-bottom w-[1%] h-[40%] top-[9%] left-[49.25%] opacity-80">
+                        </div>
+                    </div>
+                    <!-- Jam Analog -->
+
+                    <!-- Lokasi -->
+                    <div class="flex flex-col space-y-3 sm:space-y-0 sm:flex-row justify-center space-x-6 items-center"
+                        data-aos="fade-up" data-aos-duration="700">
+                        <h3 class="text-base sm:text-lg md:text-xl lg:text-2xl text-darkPurp text-center"
+                            data-aos="fade-up" data-aos-duration="800">
+                            <i class="fa-solid fa-location-dot text-darkPurp text-2xl"></i>
+                            <span class="font-bold">Bogor</span>, Jawa Barat, Indonesia
+                        </h3>
+                        <a href="#" data-aos="fade-up" data-aos-duration="800">
+                            <span
+                                class="mb-0 font-medium text-base sm:text-lg md:text-xl lg:text-2xl text-darkPurp">Change
+                                <i class="fa-solid fa-arrows-rotate"></i></span></a>
+                    </div>
+                    <!-- Lokasi -->
+
+                    <!-- Pengingat -->
+                    <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold text-center capitalize text-darkPurp"
+                        data-aos="fade-up" data-aos-duration="1000">
+                        Upcoming prayer time
+                    </h1>
+                    <p class="text-slate-900 text-base md:text-xl lg:text-2xl text-center" data-aos="fade-up"
+                        data-aos-duration="1300">
+                        <span id="salat" class="font-semibold text-darkPurp">"Maghrib" </span> prayer is
+                        coming
+                        up
+                    </p>
+                    <!-- Pengingat -->
+
+                    <!-- Jam Digital -->
+                    <div class="flex justify-center py-6">
+                        <div class="flex flex-col space-y-4 items-center">
+                            <div class="w-[100px] h-[100px] bg-lightPurp rounded-[30px] border border-solid border-[#DDDDDD] flex items-center justify-center"
+                                data-aos="flip-up" data-aos-duration="1200">
+                                <p id="jam" class="text-4xl text-secondaryPurp font-medium">--</p>
+                            </div>
+                            <span class="px-6 py-2 bg-secondaryPurp rounded-[20px] text-white font-medium"
+                                data-aos="flip-down" data-aos-duration="1200">Hours</span>
+                        </div>
+                        <p class="text-4xl flex items-center text-secondaryPurp mx-2">:</p>
+                        <div class="flex flex-col space-y-4 items-center">
+                            <div class="w-[100px] h-[100px] bg-lightPurp rounded-[30px] border border-solid border-[#DDDDDD] flex items-center justify-center"
+                                data-aos="flip-up" data-aos-duration="1200">
+                                <p id="menit" class="text-4xl text-secondaryPurp font-medium">--</p>
+                            </div>
+                            <span class="px-6 py-2 bg-secondaryPurp rounded-[20px] text-white font-medium"
+                                data-aos="flip-down" data-aos-duration="1200">Minutes</span>
+                        </div>
+                        <p class="text-4xl flex items-center text-secondaryPurp mx-2">:</p>
+                        <div class="flex flex-col space-y-4 items-center">
+                            <div class="w-[100px] h-[100px] bg-lightPurp rounded-[30px] border border-solid border-[#DDDDDD] flex items-center justify-center"
+                                data-aos="flip-up" data-aos-duration="1200">
+                                <p id="detik" class="text-4xl text-secondaryPurp font-medium">--</p>
+                            </div>
+                            <span class="px-6 py-2 bg-secondaryPurp rounded-[20px] text-white font-medium"
+                                data-aos="flip-down" data-aos-duration="1200">Seconds</span>
+                        </div>
+                    </div>
+                    <!-- Jam Digital -->
+
+                    <!-- Tanggal -->
+                    <div class="text-center flex flex-col space-y-3">
+                        <p id="today" class="font-semibold text-xl text-purp" data-aos="fade-up"
+                            data-aos-duration="1000">Saturday, September 16, 2023</p>
+                        <p id="todayHijriah" class="font-medium text-xl text-darkgrey" data-aos="fade-up"
+                            data-aos-duration="1300">
+                            1 Rabi al-Awwal, 1445
+                        </p>
+                    </div>
+                    <!-- Tanggal -->
+
+                    <!-- Jadwal Shalat -->
+                    <div>
+                        <table id="prayerTable"
+                            class="w-3/4 mx-auto overflow-hidden outline outline-1 outline-[#DDDDDD]  rounded-[30px] text-center"
+                            data-aos="zoom-in-up" data-aos-duration="1500">
+                            <thead>
+                                <tr class="bg-purp bg-opacity-15">
+                                    <th class="text-darkPurp py-3 font-medium">Salat</th>
+                                    <th class="text-darkPurp py-3 font-medium">Adzan</th>
+                                    <th class="text-darkPurp py-3 font-medium">Iqamah</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-darkGrey font-medium py-3">Fajr</td>
+                                    <td class="subuh text-darkGrey font-medium py-3">04.22</td>
+                                    <td class="  text-darkGrey font-medium py-3">04.39</td>
+                                </tr>
+                                <tr class="bg-purp bg-opacity-15">
+                                    <td class="text-darkGrey font-medium py-3">Dhuhur</td>
+                                    <td class="dzuhur text-darkGrey font-medium py-3">04.22</td>
+                                    <td class="text-darkGrey font-medium py-3">11.56</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-darkGrey font-medium py-3">Asr</td>
+                                    <td class="ashar text-darkGrey font-medium py-3">04.22</td>
+                                    <td class="text-darkGrey font-medium py-3">15.23</td>
+                                </tr>
+                                <tr class="bg-lightYellow bg-opacity-75">
+                                    <td class="text-darkGrey font-medium py-3">Maghrib</td>
+                                    <td class="magrib text-darkGrey font-medium py-3">04.22</td>
+                                    <td class="text-darkGrey font-medium py-3">18.10</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-darkGrey font-medium py-3">Isha</td>
+                                    <td class="isya text-darkGrey font-medium py-3">04.22</td>
+                                    <td class="text-darkGrey font-medium py-3">19.13</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                        <img src="./assets/img/bg-dibawahjadwalsolat.png"
+                            class="bg-no-repeat bg-cover mx-auto text-center" alt="">
+                    </div>
+                    <!-- Jadwal Shalat -->
+
+                </div>
+            </div>
+        </section>
+        <!-- Section Jadwal Shalat -->
+
+
+        <!-- Section Courses -->
+        <section id="courses">
+            <div class="container py-20 flex flex-col space-y-20 px-4">
+                <!-- Heading -->
+                <div class="flex items-center justify-between overflow-hidden">
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-darkPurp" data-aos="fade-right"
+                        data-aos-duration="800">Online Courses</h3>
+                    <select id="default"
+                        class=" border bg-transparent border-darkPurp border-solid text-darkPurp rounded-2xl focus:border-darkPurp px-4 py-1 md:px-6 md:py-3"
+                        data-aos="fade-left" data-aos-duration="800">
+                        <option selected>Sort by</option>
+                        <option value="US">Alphabet</option>
+                        <option value="CA">Date</option>
+                    </select>
+                </div>
+                <!-- Heading -->
+
+                <!-- Content -->
+                <div class="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 mt-14">
+                    <a href="./blog.html" target="_blank" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="300">
+                        <div
+                            class="bg-lightPurp overflow-hidden rounded-[30px] flex flex-col space-y-3 border border-solid border-[#DDDDDD] scale-100 hover:scale-105 transition-all duration-100 ease-in">
+                            <img src="./assets/img/course/quran.png" alt="" class="w-full" />
+                            <div>
+                                <h3 class="capitalize font-bold text-2xl text-darkPurp px-5">
+                                    Quran Class
+                                </h3>
+                                <p class="px-5 text-[#777777]">Lecturer <span class="text-slate-900">Aditya Putra</span>
+                                </p>
+                            </div>
+                            <hr class="w-[90%] mx-auto">
+                            <p class="pb-5 px-5 text-[#999999]"><i class="fa-regular fa-clock text-darkPurp"></i> Every
+                                Friday, 18.00 -
+                                21.00</p>
+                        </div>
+                    </a>
+                    <a href="./blog.html" target="_blank" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="300">
+                        <div
+                            class="bg-lightPurp overflow-hidden rounded-[30px] flex flex-col space-y-3 border border-solid border-[#DDDDDD] scale-100 hover:scale-105 transition-all duration-100 ease-in">
+                            <img src="./assets/img/course/hadith.png" alt="" class="w-full" />
+                            <div>
+                                <h3 class="capitalize font-bold text-2xl text-darkPurp px-5">
+                                    Hadith School
+                                </h3>
+                                <p class="px-5 text-[#777777]">Lecturer <span class="text-slate-900">Aditya Putra</span>
+                                </p>
+                            </div>
+                            <hr class="w-[90%] mx-auto">
+                            <p class="pb-5 px-5 text-[#999999]"><i class="fa-regular fa-clock text-darkPurp"></i> Every
+                                Monday, 18.00 -
+                                21.00</p>
+                        </div>
+                    </a>
+                    <a href="./blog.html" target="_blank" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="300">
+                        <div
+                            class="bg-lightPurp overflow-hidden rounded-[30px] flex flex-col space-y-3 border border-solid border-[#DDDDDD] scale-100 hover:scale-105 transition-all duration-100 ease-in">
+                            <img src="./assets/img/course/history.png" alt="" class="w-full" />
+                            <div>
+                                <h3 class="capitalize font-bold text-2xl text-darkPurp px-5">
+                                    Islamic History Studies
+                                </h3>
+                                <p class="px-5 text-[#777777]">Lecturer <span class="text-slate-900">Aditya Putra</span>
+                                </p>
+                            </div>
+                            <hr class="w-[90%] mx-auto">
+                            <p class="pb-5 px-5 text-[#999999]"><i class="fa-regular fa-clock text-darkPurp"></i> Every
+                                Saturday, 18.00 -
+                                21.00</p>
+                        </div>
+                    </a>
+                    <a href="./blog.html" target="_blank" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="300">
+                        <div
+                            class="bg-lightPurp overflow-hidden rounded-[30px] flex flex-col space-y-3 border border-solid border-[#DDDDDD] scale-100 hover:scale-105 transition-all duration-100 ease-in">
+                            <img src="./assets/img/course/fiqh.png" alt="" class="w-full" />
+                            <div>
+                                <h3 class="capitalize font-bold text-2xl text-darkPurp px-5">
+                                    Fiqh Class
+                                </h3>
+                                <p class="px-5 text-[#777777]">Lecturer <span class="text-slate-900">Aditya Putra</span>
+                                </p>
+                            </div>
+                            <hr class="w-[90%] mx-auto">
+                            <p class="pb-5 px-5 text-[#999999]"><i class="fa-regular fa-clock text-darkPurp"></i> Every
+                                Friday, 18.00 -
+                                21.00</p>
+                        </div>
+                    </a>
+                    <a href="./blog.html" target="_blank" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="450">
+                        <div
+                            class="bg-lightPurp overflow-hidden rounded-[30px] flex flex-col space-y-3 border border-solid border-[#DDDDDD] scale-100 hover:scale-105 transition-all duration-100 ease-in">
+                            <img src="./assets/img/course/ethics.png" alt="" class="w-full" />
+                            <div>
+                                <h3 class="capitalize font-bold text-2xl text-darkPurp px-5">
+                                    Ethics and Morality
+                                </h3>
+                                <p class="px-5 text-[#777777]">Lecturer <span class="text-slate-900">Aditya Putra</span>
+                                </p>
+                            </div>
+                            <hr class="w-[90%] mx-auto">
+                            <p class="pb-5 px-5 text-[#999999]"><i class="fa-regular fa-clock text-darkPurp"></i> Every
+                                Tuesday, 18.00 -
+                                21.00</p>
+                        </div>
+                    </a>
+                    <a href="./blog.html" target="_blank" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="450">
+                        <div
+                            class="bg-lightPurp overflow-hidden rounded-[30px] flex flex-col space-y-3 border border-solid border-[#DDDDDD] scale-100 hover:scale-105 transition-all duration-100 ease-in">
+                            <img src="./assets/img/course/economic.png" alt="" class="w-full" />
+                            <div>
+                                <h3 class="capitalize font-bold text-2xl text-darkPurp px-5">
+                                    Sharia Economics
+                                </h3>
+                                <p class="px-5 text-[#777777]">Lecturer <span class="text-slate-900">Adrian
+                                        Adhari</span>
+                                </p>
+                            </div>
+                            <hr class="w-[90%] mx-auto">
+                            <p class="pb-5 px-5 text-[#999999]"><i class="fa-regular fa-clock text-darkPurp"></i> Every
+                                Friday, 18.00 -
+                                21.00</p>
+                        </div>
+                    </a>
+                    <a href="./blog.html" target="_blank" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="450">
+                        <div
+                            class="bg-lightPurp overflow-hidden rounded-[30px] flex flex-col space-y-3 border border-solid border-[#DDDDDD] scale-100 hover:scale-105 transition-all duration-100 ease-in">
+                            <img src="./assets/img/course/arabic-language.png" alt="" class="w-full" />
+                            <div>
+                                <h3 class="capitalize font-bold text-2xl text-darkPurp px-5">
+                                    Arabic Language
+                                </h3>
+                                <p class="px-5 text-[#777777]">Lecturer <span class="text-slate-900">Angga
+                                        Parulian</span>
+                                </p>
+                            </div>
+                            <hr class="w-[90%] mx-auto">
+                            <p class="pb-5 px-5 text-[#999999]"><i class="fa-regular fa-clock text-darkPurp"></i> Every
+                                Friday, 18.00 -
+                                21.00</p>
+                        </div>
+                    </a>
+                    <a href="./blog.html" target="_blank" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="450">
+                        <div
+                            class="bg-lightPurp overflow-hidden rounded-[30px] flex flex-col space-y-3 border border-solid border-[#DDDDDD] scale-100 hover:scale-105 transition-all duration-100 ease-in">
+                            <img src="./assets/img/course/art-culture.png" alt="" class="w-full" />
+                            <div>
+                                <h3 class="capitalize font-bold text-2xl text-darkPurp px-5">
+                                    Muhammad Alfan
+                                </h3>
+                                <p class="px-5 text-[#777777]">Lecturer <span class="text-slate-900">Aditya Putra</span>
+                                </p>
+                            </div>
+                            <hr class="w-[90%] mx-auto">
+                            <p class="pb-5 px-5 text-[#999999]"><i class="fa-regular fa-clock text-darkPurp"></i> Every
+                                Friday, 18.00 -
+                                21.00</p>
+                        </div>
+                    </a>
+                    <a href="./blog.html" target="_blank" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="600">
+                        <div
+                            class="bg-lightPurp overflow-hidden rounded-[30px] flex flex-col space-y-3 border border-solid border-[#DDDDDD] scale-100 hover:scale-105 transition-all duration-100 ease-in">
+                            <img src="./assets/img/course/sciences.png" alt="" class="w-full" />
+                            <div>
+                                <h3 class="capitalize font-bold text-2xl text-darkPurp px-5">
+                                    Islamic Sciences
+                                </h3>
+                                <p class="px-5 text-[#777777]">Lecturer <span class="text-slate-900">Danilson</span></p>
+                            </div>
+                            <hr class="w-[90%] mx-auto">
+                            <p class="pb-5 px-5 text-[#999999]"><i class="fa-regular fa-clock text-darkPurp"></i> Coming
+                                Soon</p>
+                        </div>
+                    </a>
+                    <a href="./blog.html" target="_blank" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="600">
+                        <div
+                            class="bg-lightPurp overflow-hidden rounded-[30px] flex flex-col space-y-3 border border-solid border-[#DDDDDD] scale-100 hover:scale-105 transition-all duration-100 ease-in">
+                            <img src="./assets/img/course/health-welness.png" alt="" class="w-full" />
+                            <div>
+                                <h3 class="capitalize font-bold text-2xl text-darkPurp px-5">
+                                    Health and Wellness
+                                </h3>
+                                <p class="px-5 text-[#777777]">Lecturer <span class="text-slate-900">Aditya Putra</span>
+                                </p>
+                            </div>
+                            <hr class="w-[90%] mx-auto">
+                            <p class="pb-5 px-5 text-[#999999]"><i class="fa-regular fa-clock text-darkPurp"></i> Coming
+                                Soon</p>
+                        </div>
+                    </a>
+                    <a href="./blog.html" target="_blank" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="600">
+                        <div
+                            class="bg-lightPurp overflow-hidden rounded-[30px] flex flex-col space-y-3 border border-solid border-[#DDDDDD] scale-100 hover:scale-105 transition-all duration-100 ease-in">
+                            <img src="./assets/img/course/family-parenting.png" alt="" class="w-full" />
+                            <div>
+                                <h3 class="capitalize font-bold text-2xl text-darkPurp px-5">
+                                    Family and Parenting
+                                </h3>
+                                <p class="px-5 text-[#777777]">Lecturer <span class="text-slate-900">Aditya Putra</span>
+                                </p>
+                            </div>
+                            <hr class="w-[90%] mx-auto">
+                            <p class="pb-5 px-5 text-[#999999]"><i class="fa-regular fa-clock text-darkPurp"></i> Coming
+                                Soon</p>
+                        </div>
+                    </a>
+                    <a href="./blog.html" target="_blank" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="600">
+                        <div
+                            class="bg-lightPurp overflow-hidden rounded-[30px] flex flex-col space-y-3 border border-solid border-[#DDDDDD] scale-100 hover:scale-105 transition-all duration-100 ease-in">
+                            <img src="./assets/img/course/philanthropy.png" alt="" class="w-full" />
+                            <div>
+                                <h3 class="capitalize font-bold text-2xl text-darkPurp px-5">
+                                    Islamic Philanthropy
+                                </h3>
+                                <p class="px-5 text-[#777777]">Lecturer <span class="text-slate-900">Aditya Putra</span>
+                                </p>
+                            </div>
+                            <hr class="w-[90%] mx-auto">
+                            <p class="pb-5 px-5 text-[#999999]"><i class="fa-regular fa-clock text-darkPurp"></i> Coming
+                                Soon</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Content -->
+
+                <!-- Pagination -->
+                <div class="flex items-center justify-between">
+                    <select id="default"
+                        class=" border bg-transparent border-darkPurp border-solid text-darkPurp rounded-2xl focus:border-darkPurp px-6 py-3 font-bold">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12" selected>12</option>
+                    </select>
+                    <div class="flex space-x-5 items-center">
+                        <a href="#" class="text-darkPurp font-semibold text-lg">1</a>
+                        <a href="#" class="text-lg">2</a>
+                        <a href="#" class="text-lg">3</a>
+                    </div>
+                </div>
+                <!-- Pagination -->
+            </div>
+        </section>
+        <!-- Section Courses -->
+
+
+        <!-- Explore -->
+        <section id="explore" class="relative">
+            <img src="./assets/img/explore/vector.png"
+                class="hidden lg:block absolute top-48 -left-11 overflow-hidden z-10">
+            <img src="./assets/img/explore/vector3.png"
+                class="hidden lg:block absolute right-0 -top-10 overflow-hidden z-10">
+            <img src="./assets/img/explore/vector2.png"
+                class="hidden lg:block absolute bottom-24 right-56 overflow-hidden z-10">
+            <img src="./assets/img/explore/vector2.png"
+                class="hidden lg:block absolute top-0 left-56 overflow-hidden z-10">
+            <div class="container py-20 relative z-20 px-4">
+                <!-- Heading -->
+                <div class="text-center">
+                    <i class="fa-solid fa-newspaper text-5xl text-purp mb-12"></i>
+                </div>
+                <div class="flex flex-col space-y-3 mb-32 lg:mb-0">
+                    <h3 class="text-center text-3xl lg:text-5xl text-darkPurp font-bold" data-aos="fade-up"
+                        data-aos-duration="600" data-aos-delay="150">Explore Top Islamic News and
+                        Blogs</h3>
+                    <p class="text-darkGrey text-lg text-center" data-aos="fade-up" data-aos-duration="600"
+                        data-aos-delay="250">Find inspiration and knowledge within the realm of
+                        Islamic news
+                        and blog content.</p>
+                </div>
+                <!-- Heading -->
+
+                <!-- Content 1-->
+                <div class="flex flex-col-reverse md:flex-row items-center mt-10 px-6 overflow-hidden">
+                    <!-- Left -->
+                    <div class="lg:w-1/2 lg:ps-24 overflow-hidden">
+                        <div class="flex flex-col space-y-7" data-aos="fade-up-right" data-aos-duration="800"
+                            data-aos-delay="250">
+                            <h4
+                                class="text-2xl lg:text-4xl text-center md:text-left mt-10 lg:mt-0 max-w-md text-darkPurp font-bold">
+                                Distributing Donations to
+                                Reach Those
+                                in Need
+                            </h4>
+                            <div class="flex items-center space-x-4  mx-auto md:mx-0">
+                                <i class="fa-solid fa-location-dot text-secondaryPurp text-2xl lg:text-3xl"></i>
+                                <div class="flex flex-col">
+                                    <p class="text-darkPurp font-bold">Pesantren Dunia Akhirat</p>
+                                    <p class="text-darkGrey">Bogor, Jawa Barat, Indonesia</p>
+                                </div>
+                            </div>
+                            <p
+                                class="text-darkGrey text-base lg:text-lg leading-snug max-w-sm md:text-left text-center mx-auto md:mx-0">
+                                Strengthen your faith by
+                                embracing
+                                acts of
+                                charity and seeking wisdom from the Quran in this sacred space.</p>
+                            <div class="md:block flex justify-center">
+                                <a href="https://kitabisa.com/campaign/jagasyiarislam" target="_blank"
+                                    class="px-8 py-2 lg:px-14 lg:py-3 rounded-full text-white inline-block font-bold bg-lightYellow hover:opacity-85">View
+                                    News</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right -->
+                    <div class="lg:w-1/2" data-aos="fade-up-left" data-aos-duration="800" data-aos-delay="250">
+                        <img src="./assets/img/vector-donation.png" class="w-72 lg:w-3/4 mx-auto">
+                    </div>
+                </div>
+                <!-- Content 1-->
+
+                <!-- Content 2-->
+                <div class="flex flex-col-reverse md:flex-row-reverse items-center mt-40 lg:mt-10 px-6 overflow-hidden">
+                    <!-- Left -->
+                    <div class="lg:w-1/2 lg:ps-24 overflow-hidden">
+                        <div class="flex flex-col space-y-7 " data-aos="fade-up-left" data-aos-duration="800"
+                            data-aos-delay="250">
+                            <h4
+                                class="text-2xl lg:text-4xl text-center md:text-left mt-10 lg:mt-0 max-w-md text-darkPurp font-bold">
+                                Your Donation Empowers Change, Transforms Lives.
+                            </h4>
+                            <div class="flex items-center space-x-4  mx-auto md:mx-0">
+                                <i class="fa-solid fa-location-dot text-secondaryPurp text-2xl lg:text-3xl"></i>
+                                <div class="flex flex-col">
+                                    <p class="text-darkPurp font-bold">Pesantren Dunia Akhirat</p>
+                                    <p class="text-darkGrey">Bogor, Jawa Barat, Indonesia</p>
+                                </div>
+                            </div>
+                            <p
+                                class="text-darkGrey text-base lg:text-lg leading-snug max-w-sm md:text-left text-center mx-auto md:mx-0">
+                                Empower change,
+                                transform lives -
+                                your donation makes a lasting impact in our community and beyound.donate today.</p>
+                            <div class="md:block flex justify-center">
+                                <a href="https://kitabisa.com/campaign/jagasyiarislam" target="_blank"
+                                    class="px-8 py-2 lg:px-14 lg:py-3 rounded-full text-white inline-block font-bold bg-lightYellow hover:opacity-85">View
+                                    News</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right -->
+                    <div class="w-1/2 " data-aos="fade-up-right" data-aos-duration="800" data-aos-delay="250">
+                        <img src="./assets/img/vector-money.png" class="w-72 lg:w-3/4 mx-auto">
+                    </div>
+                </div>
+                <!-- Content 2-->
+            </div>
+        </section>
+
+
+        <!-- Pilar -->
+        <section id="pilar" class="relative">
+            <img src="./assets/img/pilars/vector.png"
+                class="hidden lg:block absolute top-0 left-0 overflow-hidden z-10">
+            <div class="container py-20 relative z-20 px-4 ">
+                <div class="flex flex-col lg:flex-row items-center justify-between overflow-hidden">
+                    <div class="w-full lg:w-1/2" data-aos="fade-right" data-aos-duration="900" data-aos-delay="250">
+                        <div class="flex flex-col space-y-14">
+                            <div class="flex items-center mx-auto lg:mx-0">
+                                <button class="px-6 py-2 rounded-full bg-purp text-white hover:opacity-90">Pilars of
+                                    Islam</button>
+                                <div class="border border-solid border-purp w-24"></div>
+                                <button
+                                    class="px-6 py-2 rounded-full border border-solid border-purp text-purp hover:bg-purp hover:text-white">History
+                                    of
+                                    Islam</button>
+                            </div>
+                            <div class="flex flex-col space-y-5 text-center lg:text-left">
+                                <h3 class="text-5xl text-darkPurp font-bold">
+                                    Pilars of Islam
+                                </h3>
+                                <p class="text-darkGrey lg:max-w-md text-justify leading-relaxed">The Pillars of Islam
+                                    serve as a guiding
+                                    light,
+                                    illuminating the
+                                    path to
+                                    a purposeful and meaningful life. Rooted in the core principles of Islamic
+                                    teachings,
+                                    these five pillars—Shahada, Salah, Zakat, Sawm, and Hajj.</p>
+                                <p class="text-darkGrey lg:max-w-md text-justify leading-relaxed">Shape a holistic
+                                    framework, fostering
+                                    spiritual
+                                    growth, social
+                                    responsibility, and a deep connection with the divine, paving the way for a
+                                    fulfilling
+                                    and balanced existence.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2" data-aos="fade-left" data-aos-duration="900" data-aos-delay="250">
+                        <img src="./assets/img/pilars.png" class="w-full md:w-[600px] lg:w-4/5 mx-auto" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pilar -->
+
+
+        <!-- About -->
+        <section id="about" class="relative">
+            <img src="./assets/img/muslim-universe/vector.png"
+                class="hidden lg:block absolute top-0 left-0 overflow-hidden z-10">
+            <img src="./assets/img/muslim-universe/vector2.png"
+                class="hidden lg:block absolute top-0 right-0 overflow-hidden z-10">
+            <div class="container py-20 relative z-20 px-4">
+                <div class="flex flex-col-reverse lg:flex-row items-center justify-between overflow-hidden">
+                    <div class="lg:w-1/2" data-aos="fade-right" data-aos-duration="900" data-aos-delay="250">
+                        <img src="./assets/img/about.png"
+                            class="w-full mt-12 lg:mt-0 sm:w-[450px] md:w-[600px] lg:w-4/5" />
+                    </div>
+                    <div class="lg:w-1/2" data-aos="fade-left" data-aos-duration="900" data-aos-delay="400">
+                        <div class="flex flex-col space-y-14 text-center lg:text-left">
+                            <div class="flex flex-col space-y-5">
+                                <div>
+                                    <h3 class="text-3xl lg:text-5xl text-darkPurp font-bold">
+                                        About Muslim Universe
+                                    </h3>
+                                    <p class="font-medium text-slate-900 text-lg lg:text-2xl mt-3">Explore, Learn,
+                                        Thrive in
+                                        Islamic
+                                        Knowledge</p>
+                                </div>
+                                <p class="text-darkGrey  text-justify leading-relaxed">Welcome to Muslim
+                                    Universe,
+                                    the online
+                                    realm of enlightenment where we illuminate the depths of Islamic knowledge.
+                                    Committed to delivering a profound learning experience, we guide you through the
+                                    wonders of the Quran, hadith traditions, and a profound understanding of Islamic
+                                    values.</p>
+                                <p class="text-darkGrey  text-justify leading-relaxed">Here, we foster a
+                                    community of passionate
+                                    learners eager to explore and comprehend the spiritual and intellectual wealth of
+                                    Islam. Join us on this journey, where knowledge and faith converge, making a
+                                    positive impact on your life and the community.</p>
+                                <p class="text-darkGrey  text-justify leading-relaxed">Explore the latest
+                                    updates and engage in
+                                    social sharing on our news platform. Happy learning at Muslim Universe!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About -->
+
+
+        <!-- FAQ -->
+        <section id="faq" class="relative">
+            <div
+                class="hidden lg:block w-80 h-80 bg-purp absolute top-0 z-10 left-11 blur-3xl rounded-full opacity-30 overflow-hidden">
+            </div>
+            <img src="./assets/img/faq/vector.png"
+                class="hidden lg:block absolute bottom-0 right-0 overflow-hidden z-10">
+            <img src="./assets/img/faq/vector2.png"
+                class="hidden lg:block absolute bottom-0 left-0 overflow-hidden z-10">
+            <img src="./assets/img/faq/vector3.png"
+                class="hidden lg:block absolute top-32 right-11 overflow-hidden z-10">
+            <div class="container py-20 relative z-20 px-4">
+                <div class="flex flex-col-reverse lg:flex-row items-center overflow-hidden">
+                    <div class="w-full lg:w-1/2">
+                        <div class="flex flex-col space-y-8 overflow-hidden">
+                            <div class="lg:text-left text-center" data-aos="fade-up-right" data-aos-duration="700"
+                                data-aos-delay="100">
+                                <h3 class="text-3xl lg:text-4xl text-darkPurp font-bold">
+                                    Frequently Asked Questions
+                                </h3>
+                                <p class="font-medium text-slate-900 text-2xl">General Question</p>
+                            </div>
+                            <div id="accordion-collapse" data-accordion="collapse">
+                                <div class="flex flex-col space-y-4">
+                                    <div data-aos="flip-down" data-aos-duration="500" data-aos-delay="200">
+                                        <h2 id="accordion-collapse-heading-1">
+                                            <button type="button"
+                                                class="flex items-center justify-between w-full p-5 font-medium text-darkGrey rounded-lg bg-white border border-solid border-[#DDDDDD]  hover:opacity-80 focus:text-darkGrey focus:ring-2  focus:ring-[#DDDDDD]  gap-3"
+                                                data-accordion-target="#accordion-collapse-body-1" aria-expanded="false"
+                                                aria-controls="accordion-collapse-body-1">
+                                                <span>How can I enroll in courses at Muslim Universe ?</span>
+                                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0"
+                                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 10 6">
+                                                    <path stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                                                </svg>
+                                            </button>
+                                        </h2>
+                                        <div id="accordion-collapse-body-1" class="hidden"
+                                            aria-labelledby="accordion-collapse-heading-1">
+                                            <div class="p-5 border  border-[#DDDDDD] bg-white mt-2 rounded-lg ">
+                                                <p class="mb-2 text-darkGrey leading-relaxed">To enroll in a course,
+                                                    you'll need to create a Muslim Universe account. This account will
+                                                    not
+                                                    only grant you access to your selected course but also serve as a
+                                                    hub
+                                                    for tracking your progress and accessing additional learning
+                                                    resources.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-aos="flip-down" data-aos-duration="500" data-aos-delay="300">
+                                        <h2 id="accordion-collapse-heading-2">
+                                            <button type="button"
+                                                class="flex items-center justify-between w-full p-5 font-medium text-darkGrey rounded-lg bg-white border border-solid border-[#DDDDDD]  hover:opacity-80 focus:text-darkGrey focus:ring-2  focus:ring-[#DDDDDD]  gap-3"
+                                                data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
+                                                aria-controls="accordion-collapse-body-2">
+                                                <span>How does learning support work at Muslim Universe?</span>
+                                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0"
+                                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 10 6">
+                                                    <path stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                                                </svg>
+                                            </button>
+                                        </h2>
+                                        <div id="accordion-collapse-body-2" class="hidden"
+                                            aria-labelledby="accordion-collapse-heading-2">
+                                            <div class="p-5 border  border-[#DDDDDD] bg-white mt-2 rounded-lg ">
+                                                <p class="mb-2 text-darkGrey leading-relaxed">Upon enrollment, you gain
+                                                    access to our comprehensive student portal. Here, you'll find a
+                                                    centralized hub for all your course-related activities, including
+                                                    announcements, assignments, and additional learning resources.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-aos="flip-down" data-aos-duration="500" data-aos-delay="400">
+                                        <h2 id="accordion-collapse-heading-3">
+                                            <button type="button"
+                                                class="flex items-center justify-between w-full p-5 font-medium text-darkGrey rounded-lg bg-white border border-solid border-[#DDDDDD]  hover:opacity-80 focus:text-darkGrey focus:ring-2  focus:ring-[#DDDDDD]  gap-3"
+                                                data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
+                                                aria-controls="accordion-collapse-body-3">
+                                                <span>Course Access and Time Flexibility ?</span>
+                                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0"
+                                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 10 6">
+                                                    <path stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                                                </svg>
+                                            </button>
+                                        </h2>
+                                        <div id="accordion-collapse-body-3" class="hidden"
+                                            aria-labelledby="accordion-collapse-heading-3">
+                                            <div class="p-5 border  border-[#DDDDDD] bg-white mt-2 rounded-lg ">
+                                                <p class="mb-2 text-darkGrey leading-relaxed">Access a library of
+                                                    on-demand learning resources. From video lectures to supplementary
+                                                    reading materials, these resources are available whenever you need
+                                                    them. Tailor your learning journey by revisiting content and
+                                                    exploring additional materials at your convenience.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-aos="flip-down" data-aos-duration="500" data-aos-delay="500">
+                                        <h2 id="accordion-collapse-heading-4">
+                                            <button type="button"
+                                                class="flex items-center justify-between w-full p-5 font-medium text-darkGrey rounded-lg bg-white border border-solid border-[#DDDDDD]  hover:opacity-80 focus:text-darkGrey focus:ring-2  focus:ring-[#DDDDDD]  gap-3"
+                                                data-accordion-target="#accordion-collapse-body-4" aria-expanded="false"
+                                                aria-controls="accordion-collapse-body-2">
+                                                <span>Available Scholarships and Special Discounts ?</span>
+                                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0"
+                                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 10 6">
+                                                    <path stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                                                </svg>
+                                            </button>
+                                        </h2>
+                                        <div id="accordion-collapse-body-4" class="hidden"
+                                            aria-labelledby="accordion-collapse-heading-4">
+                                            <div class="p-5 border  border-[#DDDDDD] bg-white mt-2 rounded-lg ">
+                                                <p class="mb-2 text-darkGrey leading-relaxed">We proudly offer
+                                                    scholarships for students who demonstrate academic excellence,
+                                                    dedication, and passion for learning. These merit-based scholarships
+                                                    aim to recognize and reward outstanding achievements within our
+                                                    community.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 text-end" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
+                        <img src="./assets/img/vector-question.png" class="w-full md:w-[550px] lg:w-5/6 lg:ml-auto" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ -->
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-darkPurp">
+        <div class="container py-10">
+            <div class="flex flex-col space-y-8 items-center">
+                <div>
+                    <img src="./assets/img/logo.png">
+                </div>
+                <div class="max-w-sm text-center text-lightGray">
+                    <span class="font-light">“Explore, Learn, Thrive in Islamic Knowledge”</span>
+                    Happy learning at Muslim Universe!
+                </div>
+                <div class="flex flex-col space-y-8 sm:space-y-0 sm:flex-row sm:space-x-14 items-center">
+                    <a href="#home" class="text-white text-sm hover:text-lightYellow">Home</a>
+                    <a href="#courses" class="text-white text-sm hover:text-lightYellow">Course</a>
+                    <a href="#explore" class="text-white text-sm hover:text-lightYellow">News</a>
+                    <a href="#about" class="text-white text-sm hover:text-lightYellow">About</a>
+                    <a href="#faq" class="text-white text-sm hover:text-lightYellow">FAQ</a>
+                </div>
+                <div class="flex space-x-14 items-center">
+                    <a href="#"><i class="fa-brands fa-facebook-f text-white text-xl hover:text-lightYellow"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter text-white text-xl hover:text-lightYellow"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram text-white text-xl hover:text-lightYellow"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube text-white text-xl hover:text-lightYellow"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <script src="./assets/js/flowbite.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script>
+        AOS.init();
+        const nav = document.getElementById('menu')
+        var hamburger = document.querySelector(".hamburger");
+        // On click
+        hamburger.addEventListener("click", function () {
+            // Toggle class "is-active"
+            hamburger.classList.toggle("is-active");
+            nav.classList.toggle('flex')
+            nav.classList.toggle('hidden')
+            // Do something else, like open/close menu
+        });
+    </script>
+</body>
+
+</html>
